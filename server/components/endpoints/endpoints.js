@@ -13,7 +13,7 @@ router.delete('/', remove);
 
 const getWithQueryString = require('./controllers/getWithQueryString');
 
-// the query can be passed in as any data after a question mark /api/endpoints/query?=myquery
+// the query can be passed in as any data after a question mark /api/endpoints/query?key=value&key=value
 router.get('/query', getWithQueryString);
 
 const getWithParam = require('./controllers/getWithParam');
