@@ -15,8 +15,15 @@ $ npm start
 ### API Endpoints you can make requests to in this API(Postman is a good tool to test these API endpoints and to add your own):
 
 ```
-GET /api/endpoints/
-POST /api/endpoints/ (Provide JSON request body with any data: { "data": "some data" })
-PUT /api/endpoints/ (Provide JSON request body with any data: { "data": "some data" })
-DELETE /api/endpoints/ (Provide JSON request body with any data: { "data": "some data" })
+GET http://localhost:3000/api/endpoints/
+
+POST http://localhost:3000/api/endpoints/ (Provide JSON request body with any data: { "data": "some data" })
+
+PUT http://localhost:3000/api/endpoints/ (Provide JSON request body with any data: { "data": "some data" })
+
+DELETE http://localhost:3000/api/endpoints/ (Provide JSON request body with any data: { "data": "some data" })
+
+GET http://localhost:3000/api/endpoints/param/:param (:param should be any string value you want, :param is a placeholder)
+
+GET http://localhost:3000/api/endpoints/query?key=value&key=value (key=value should be any key value pair you want, you can add as many &'s and extra data as you want)
 ```

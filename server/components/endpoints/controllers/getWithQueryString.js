@@ -1,5 +1,6 @@
 module.exports = (req, res) => {
-    if(req.query && req.query.length) {
+    // checking that the query was properly provided in the request
+    if(req.query && Object.keys(req.query).length) {
         res.json({
             msg: 'GET request successfully made',
             queryString: req.query

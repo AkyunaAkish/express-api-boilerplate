@@ -14,11 +14,11 @@ router.delete('/', remove);
 const getWithQueryString = require('./controllers/getWithQueryString');
 
 // the query can be passed in as any data after a question mark /api/endpoints/query?=myquery
-router.get('/query', get);
+router.get('/query', getWithQueryString);
 
 const getWithParam = require('./controllers/getWithParam');
 
 // :param can be passed in as any string value
-router.get('/param/:param', get);
+router.get('/param/:param', getWithParam);
 
 module.exports = router;
